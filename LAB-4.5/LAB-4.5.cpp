@@ -39,8 +39,8 @@ int main()
 
 	for (int i = 0; i < 10; i++)
 	{
-		x = rand() / RAND_MAX - 2 * R;
-		y = rand() / RAND_MAX + 2 * R;
+		x = 4 * R * rand() / RAND_MAX - 2 * R;
+		y = 4 * R * rand() / RAND_MAX - 2 * R;
 
 		if ((y <= x && (x - a) * (x - a) + (y - b) * (y - b) <= R) ||
 			((x + a) * (x + a) + (y + b) * (y + b) <= R && y <= x))
